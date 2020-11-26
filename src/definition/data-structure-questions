@@ -1,39 +1,135 @@
 Please answer the below Data Structure Questions:
 
 why do we need data structure?
-A.
+A. To manage large amounts of data
 
 
 What are the various operations that can be performed on different Data Structures?
+A. Creation, insertion, deletion, searching, sorting, updating data
+
 List out the areas in which data structures are applied extensively?
+A. Compiler Design, Operating System, Database Management System etc
+
 what is an Array?
+A. A container object to hold single type values
+
 what is the difference between the Array and ArrayList?
+A. Array - fixed length
+ArrayList - variable length
+
 what is LinkedList?
+A. A class which can contain many similar type objects
+
 How is an Array different from Linked List?
+A. Array - primitive data structure
+LinkedList - non-primitive and
+
 what is queue?
+A. A collection interface to collect ordered elements
+
 what is stack?
+A. A LIFO data structure
+
 what is FIFO and LIFO?
+A. FIFO - first in first out method
+LIFO - last in first out method
+
 what is the order of complexity?
+A. A measure of the logical complexity of an algorithm
+
 what is the best case to search an element from an array?
+A. Linear search, Sequential search, Tree searching
+
 what is the worst case to search an element from an array?
+A.
 what is tree in data structure?
+A. A non-linear searching process
+
 what is graph in data structure?
+A. A non-linear data structure
+
 what is the difference between the HashTable and HashMap?
+A. HashTable - synchronized
+HashMap - non synchronized
+
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+A. RDBMS - Array
+Network data model - Graph
+Hierarchical data model - Trees
+
 How HashMap works in java?
+A. Assigning a unique code for any variable (Hashing)
+
 What is ArrayIndexOutOfBoundsException in java? When it occurs?
+A. This means a index is negative or greater than or equal to the size of the array
+and it happens when we try to access that index
+
 What are the different ways of copying an array into another array?
+A. a) Manually
+b) Arrays.copyOf()
+c) System.arraycopy()
+d) Object.clone()
+
 What is difference between an array and a linked list?
 What is DFS and BFS?
+A. DFS - depth first search
+BFS - breadth first search
+
 What is Recursion?
+A. To make a method call itself such as loops
+
 What are linear and non linear data Structures?
+A. linear - data elements are arranged in a linear order and can be accessed with a single run
+no linear - data elements are arranged in a hierarchically order and can't be accessed with a single run
+
 What is Big-(O)-notation?
+A. An algorithm complexity
+
 Outlined different kind of sorting algorithm with time complexity?
+
+Omega = m
+Theta = t
+
+Algorithm                           Best                    Average                 Worst
+
+Selection Sort                      m(n^2)                  t(n^2)                  O(n^2)
+Bubble Sort                         m(n)                    t(n^2)                  O(n^2)
+Insertion sort                      m(n)                    t(n^2)                  O(n^2)
+Heap Sort                           m(n log(n))             t(n log(n))             O(n log(n)
+Quick Sort                          m(n log(n))             t(n log(n))             O(n^2)
+Merge Sort                          m(n log(n))             t(n log(n))             O(n log(n))
+Bucket Sort                         m(n+k)                  t(n+k)                  O(n^2)
+Radix Sort                          m(nk)                   t(nk)                   O(nk)
 
 Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of Accessing element.
   b)In terms of Inserting element.
   c)In terms of Searching element.
   d)In terms of Removing element.
+
+Theta = t
+
+
+Data Structure                                                        Time Complexity
+
+                                             Average                                                 Worst
+
+                        Accessing      Searching    Inserting   Removing           Accessing      Searching    Inserting   Removing
+
+Array                     t(1)           t(n)         t(n)        t(n)               O(1)          O(n)           O(n)         O(n)
+Stack                     t(n)           t(n)         t(1)        t(1)               O(1)          O(n)           O(n)         O(n)
+Queue                     t(n)           t(n)         t(1)        t(1)               O(n)          O(n)           O(1)         O(1)
+Singly-Linked List        t(n)           t(n)         t(1)        t(1)               O(n)          O(n)           O(1)         O(1)
+Doubly-Linked List        t(n)           t(n)         t(1)        t(1)               O(n)          O(n)           O(1)         O(1)
+Skip List               t(log (n))     t(log (n))  t(log (n))   t(log (n))           O(n)          O(n)           O(n)         O(n)
+Hash Table                 n/a           t(1)         t(1)        t(1)               n/a           O(n)           O(n)         O(n)
+Binary Search Tree      t(log (n))    t(log (n))   t(log (n))   t(log (n))           O(n)          O(n)           O(n)         O(n)
+Cartesian Tree             n/a        t(log (n))   t(log (n))   t(log (n))            n/a          O(n)           O(n)         O(n)
+B-tree                  t(log (n))    t(log (n))   t(log (n))   t(log (n))          O(log (n))    O(log (n))    O(log (n))    O(log (n))
+Red-Black Tree          t(log (n))    t(log (n))   t(log (n))   t(log (n))          O(log (n))    O(log (n))    O(log (n))    O(log (n))
+Splay Tree                 n/a        t(log (n))   t(log (n))   t(log (n))            n/a         O(log (n))    O(log (n))    O(log (n))
+AVL Tree                t(log (n))    t(log (n))   t(log (n))   t(log (n))          O(log (n))    O(log (n))    O(log (n))    O(log (n))
+KD Tree                 t(log (n))    t(log (n))   t(log (n))   t(log (n))           O(n)          O(n)           O(n)         O(n)
+
 
 

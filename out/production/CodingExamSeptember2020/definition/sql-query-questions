@@ -2,18 +2,47 @@ This file contains SQL questions.
 Please read the questions and answer.
 
 What is Database?
-A.
+A. Organized collection of structured information or data
 
 What is DBMS?
+A. Database Management System - to store, retrieve, define and manage data
+
 What is the difference between SQL and MySQL?
+A. SQL - query language
+MySQL - sql based database
+
 What is RDBMS? How is it different from DBMS?
+A. RDBMS - relational database management system where usually data are stored in tables
+
 What are Tables and Fields?
+A.Tables contain rows, columns and fields as a record for data insertion
+Fields - are different types of data
+
 What is SQL?
+A. Structured Query Language - to access databases
+
 What are Constraints in SQL?
+A. Specific Rules for the data in a table
+
+Not Null
+Unique
+Primary Key
+Foreign Key
+Check
+Default
+Index
+
 What is a Primary Key?
+A. combination of Not NUll and Unique to identify each row in a table
+
 What is a Foreign Key?
+A. To link two tables together
+
 What is Normalization?
+A. A process to organize the data in the databse
+
 What is Denormalization?
+A. Optimization process to filter unnecessary data into another table
 
 You have 2 tables given below.
 
