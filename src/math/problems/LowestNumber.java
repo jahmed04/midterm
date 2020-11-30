@@ -25,10 +25,33 @@ public class LowestNumber {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+
+		// printing the lowest number from the array
+		System.out.println("The lowest number from this array is: " +lowestValue(array, 26));
+
+
 		System.out.println("Data is reading from the Table (tbl_primenumber) and displaying to the console");
 		for(String st:lowestValue){
 			System.out.println(st);
 		}
+	}
+
+	public static int lowestValue (int[] array, int t) {
+
+		int temp;
+
+		for (int i=0; i<t; i++) {
+
+			for (int j = i+1; j<t; j++) {
+
+				if (array[i] > array[j]) {
+					temp = array[i];
+					array[i] = array[j];
+					array[j] = temp;
+				}
+			}
+		}
+		return array[0];
 	}
 
 }

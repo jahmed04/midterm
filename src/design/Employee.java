@@ -15,7 +15,7 @@ public interface Employee {
 	public String employeeName();
 	
 	//assignDepartment() will assign employee to departments
-    public void assignDepartment();
+    public abstract void assignDepartment();
 	
 	//calculate employee salary
 	public int calculateSalary();

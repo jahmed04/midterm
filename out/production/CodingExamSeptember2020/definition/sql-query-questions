@@ -63,13 +63,21 @@ CustomerID	   CustomerName	    CustomerPhone	     Country
 Please do the following on above Order table and Customer table:
 
 Inner Join:
+select Order.OrderID, Customer.CustomerName from Order inner join Customer on Order.CustomerID = Customer.CustomerID;
+
 Left Join:
+select Order.OrderID, Customers.CustomersName from Order left join Customer on Order.CustomerID = Customer.CustomerID;
+
 Right Join:
+select Order.OrderID, Customer.CustomerName from Order right join Customer on Order.CustomerID = Customer.CustomerID;
+
 Full Join:
+select Order.CustomerID, Customer.CustomerID from Order full outer join on Order.CustomerID = Customer.CustomerID;
 
 On Customer Table, please Insert one row.
+insert into Customer (CustomerID, CustomerName, CustomerPhone, Country)
+values ('4', 'Jon Adams', '1-456-345-5678', 'Italy');
 
 On Order Table, please Update one row.
 
-
-
+update Order set  CustomerID = '3' where OrderID = '40250';
