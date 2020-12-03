@@ -23,18 +23,32 @@ public class Numbers {
 	public static void main(String[] args) throws Exception {
 		
 		int [] num = new int[10];
-		storeRandomNumbers(num);
-		ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
+
+		storeRandomNumbers(num);  //random
+
+		ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();   //db connection
+
 		//Selection Sort
 		Sort algo = new Sort();
 		algo.selectionSort(num);
 		long selectionSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of "+ num.length + " numbers in Selection Sort take: " + selectionSortExecutionTime + " milli sec");
+
+
+
         connectToSqlDB.insertDataFromArrayToSqlTable(num, "selection_sort", "SortingNumbers");
         List<String> selectionSortNumbers = connectToSqlDB.readDataBase("selection_sort", "SortingNumbers");
+
+
         printValue(selectionSortNumbers);
 		int n = num.length;
 		randomize (num, n);
+
+
+
+
+
+
 		//Insertion Sort
 		algo.insertionSort(num);
 		long insertionSortExecutionTime = algo.executionTime;

@@ -62,6 +62,33 @@ public class CsvReader {
                 System.out.println(student.getFirstName() + " " + student.getLastName() + " " + student.getNumberOfExercisesSolved());
             }
         }
+        // average
+
+        System.out.println("All the score: ");
+        for (Trainee st: roster) {
+            if (st.getNumberOfExercisesSolved()<600) {
+                int n = st.getNumberOfExercisesSolved();
+                System.out.println( n);
+            }
+        }
+
+//        for (Trainee ab: roster) {
+//
+//            int a = ab.getNumberOfExercisesSolved();
+//            int x = 1;
+//            int b = 11;
+//            while (x <=a) {
+//                System.out.println(x);
+//                b += ab.getNumberOfExercisesSolved();
+//                x +=1;
+//                int avg = (b/a);
+//                System.out.println(avg);
+//            }
+//        }
+
+
+        int average = ((403+395+382+285+237+223+116+107+10+5+3)/11);
+        System.out.println("Class average is : " + average);
 
     }
 
